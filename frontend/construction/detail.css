@@ -56,30 +56,35 @@ border-radius: 10px;
     flex-wrap: wrap;
 }
 
-#feature .fe-box h6{
-    padding: 9px 15px;
-    border-radius: 20px;
-    color: #FFF;
-    background-color: #131113;
+#feature .fe-box h4{
+    color: rgb(199, 13, 245);
     display: inline-block;
 }
-#feature .fe-box:nth-child(2) h6{
-    background-color: #131113;
 
+#feature .fe-box{
+    display: inline-block;
 }
-#feature .fe-box:nth-child(3) h6{
-    background-color: #151615;
-}
-
 #feature .fe-box img{
     width: 100%;
-    margin-bottom: 10px;
+    height: auto;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    display: block;
+    margin-bottom: 5px;
 }
-#feature .fe-box h6:hover{
+#feature .fe-box img:hover{
+    transform: scale(1.5);
+    align-items: center;
+
+}
+#feature .fe-box h4:hover{
     border-radius: 20px;
     background-color: rgba(3, 237, 245, 0.938);
     color: black;
 }
+
+
 
 
 
@@ -102,6 +107,10 @@ border-radius: 10px;
 #about-app .video {
     width: 100%;
 }
+
+/* image zoom */
+
+
 }
 
 
