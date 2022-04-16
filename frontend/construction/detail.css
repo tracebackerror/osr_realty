@@ -98,7 +98,7 @@ border-radius: 10px;
 #feature .fe-box .modal-dialog{
     height: 50%;
     width: auto;
-    
+
 }
 /* About page */
 
@@ -198,12 +198,14 @@ footer .copyright p{
 
 
 
-@media (max-width:477px) {
-    .section-p1 {
-        padding: 20px;
-    }
 
-    /* About page */
+
+@media (max-width:477px) {
+.section-p1 {
+   padding: 20px;
+}
+
+/* About page */
 #about-head {
     flex-direction: column;
 }
@@ -219,13 +221,12 @@ footer .copyright p{
 }
 
 #feature .fe-box {
-    width: 180px;
-    margin-top: 10px;
     text-align: center;
-border: 1px solid gray;
+    margin-top: 10px;
 border-radius: 10px;
 }
-}
 
+
+}
 
 

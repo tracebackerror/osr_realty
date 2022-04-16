@@ -32,7 +32,16 @@
         <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>
         </div>
-
+<form action="" class="login-form">
+      <h4>Client Details</h4>
+      <input type="text" placeholder="enter your name" class="box">
+      <input type="text" placeholder="enter your mob. no." class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+      </div>
+      <input type="submit" value="Save" class="new">
+   </form>
     </header>
     <h1 class="heading"> Details view </h1>
     <section id="about-head" class="section-p1">
@@ -65,8 +74,8 @@
         <div class="fe-box">
             <img src="images/floor1.jpg" alt="">
             <h4>1 BHK</h4>
-            <button class="new" data-toggle="modal" data-target="#myModal">download brochure </button>
-            <div class="modal" id="myModal">
+            <button class="new"  id="get_info" >download brochure </button>
+            <!-- <div class="modal" id="myModal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -97,27 +106,22 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="fe-box">
             <img src="images/floor2.jpg" alt="">
             <h4>2 BHK</h4>
-            <button class="new" data-toggle="modal" data-target="#myModal">download brochure </button>
+            <button class="new" id="pop_up">download brochure </button>
 
 
         </div>
         <div class="fe-box">
             <img src="images/floor3.jpeg" alt="">
             <h4>3 BHK </h4>
-            <button class="new" data-toggle="modal" data-target="#myModal">download brochure </button>
+            <button id="client_detail" class="new">download brochure </button>
         </div>
 
-
     </section>
-
-
-
-
 
     <footer class="section-p1">
         <div class="col">
@@ -140,7 +144,7 @@
             <a href="#">About Us</a>
             <a href="#">Delivery information</a>
             <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Condition</a>
+            <a href="#">Career</a>
             <a href="#">Contact Us</a>
         </div>
         <div class="col">
@@ -169,7 +173,28 @@
         </p>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+
+    <script>
+let loginForm = document.querySelector('.header .login-form');
+
+
+document.querySelector('#get_info').onclick = () =>{
+   loginForm.classList.toggle('active');
+   navbar.classList.remove('active');
+   searchForm.classList.remove('active'); 
+};
+document.querySelector('#pop_up').onclick = () =>{
+   loginForm.classList.toggle('active');
+   navbar.classList.remove('active');
+   searchForm.classList.remove('active'); 
+};
+document.querySelector('#client_detail').onclick = () =>{
+   loginForm.classList.toggle('active');
+   navbar.classList.remove('active');
+   searchForm.classList.remove('active'); 
+};
+    </script>
 </body>
 
 </html>
